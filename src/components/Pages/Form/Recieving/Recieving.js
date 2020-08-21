@@ -12,7 +12,7 @@ const { Option } = Select;
 const Recieving = (props) => {
   const { push } = useHistory();
   const { state, action } = useStateMachine(updateAction);
-  const { register, handleSubmit, control, errors } = useForm({
+  const { handleSubmit, control, errors } = useForm({
     defaultValues: state.formDetails,
   });
 
@@ -104,7 +104,6 @@ const Recieving = (props) => {
                 <TextField
                   label="Address Line 2"
                   style={{ width: "80%" }}
-                  inputRef={register}
                   bordered={false}
                 />
               }

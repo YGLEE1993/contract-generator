@@ -13,14 +13,14 @@ import "antd/dist/antd.css";
 
 const { Option } = Select;
 
-const tip1 = (
-  <span style={{ color: "white", fontSize: "18px" }}>
-    <b>What is Medical Non-Discolsure Agreement?</b>
-    <br />A Medical NDA is an arrangement used specifically for the healthcare
-    personnel, employees and professsionals who have access to medical
-    information.
-  </span>
-);
+// const tip1 = (
+//   <span style={{ color: "white", fontSize: "18px" }}>
+//     <b>What is Medical Non-Discolsure Agreement?</b>
+//     <br />A Medical NDA is an arrangement used specifically for the healthcare
+//     personnel, employees and professsionals who have access to medical
+//     information.
+//   </span>
+// );
 
 const tip2 = (
   <span style={{ color: "white", fontSize: "18px" }}>

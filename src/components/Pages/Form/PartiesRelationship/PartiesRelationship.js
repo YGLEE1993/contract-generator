@@ -5,6 +5,15 @@ import { useHistory } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
 import { TextField } from "@material-ui/core";
 import Navigation from "../../../Navigation/Navigation";
+import Tooltip from "../../../UI/Tooltip/Tooltip";
+
+const relationshipTip = (
+  <span style={{ color: "white", fontSize: "18px"}}>
+    <b>* Optional</b> <br />
+    Further discribe relationship between Disclosing Party and the Receiving Party. 
+  </span>
+);
+
 
 const PartiesRelationship = (props) => {
   const { push } = useHistory();
@@ -33,6 +42,7 @@ const PartiesRelationship = (props) => {
             <h2 className="form-question">
               What is the Disclosing Party's relationship to the Receiving
               Party?{" "}
+              <Tooltip placement="right" tips={relationshipTip} /> 
             </h2>
             <Controller
               as={

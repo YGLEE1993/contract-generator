@@ -49,6 +49,7 @@
 .form-end {
   border-bottom: 1px solid #e07c00;
   margin-top: 50px;
+  min-width: 560px;
 }
 
 .heading {

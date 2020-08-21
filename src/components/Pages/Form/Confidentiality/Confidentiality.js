@@ -38,7 +38,6 @@ const Confidentiality = (props) => {
       <Navigation />
       <form onSubmit={handleSubmit(onNextStep)}>
         <div className="form-container">
-
           {/*********  1. All? *********/}
           <div style={{ marginBottom: "40px" }}>
             <h1 className="form-question">
@@ -49,7 +48,6 @@ const Confidentiality = (props) => {
               <p className="required">This is required.</p>
             )}
             <div style={{ marginTop: "20px" }}>
-           
               <input
                 type="radio"
                 name="confidentialityAll"
@@ -92,14 +90,17 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  // defaultChecked={true}
-                  as={Checkbox}
-                  control={control}
-                  defaultValue="true"
                   name="confidentiality_1"
-                  style={{
-                    color: "#e07c00",
-                  }}
+                  control={control}
+                  render={(props) => (
+                    <Checkbox
+                      style={{
+                        color: "#e07c00",
+                      }}
+                      onChange={(e) => props.onChange(e.target.checked)}
+                      checked={props.value}
+                    />
+                  )}
                 />
               }
               label="Public Known at the time of disclosure or subsequently becomes
@@ -109,13 +110,17 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  as={Checkbox}
-                  control={control}
-                  defaultValue="true"
                   name="confidentiality_2"
-                  style={{
-                    color: "#e07c00",
-                  }}
+                  control={control}
+                  render={(props) => (
+                    <Checkbox
+                      style={{
+                        color: "#e07c00",
+                      }}
+                      onChange={(e) => props.onChange(e.target.checked)}
+                      checked={props.value}
+                    />
+                  )}
                 />
               }
               label="Discovered, created by, or rightfully in the possession of the
@@ -126,14 +131,18 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  as={Checkbox}
-                  control={control}
-                  defaultValue="true"
-                  name="confidentiality_3"
-                  style={{
-                    color: "#e07c00",
-                  }}
-                />
+                name="confidentiality_3"
+                control={control}
+                render={(props) => (
+                  <Checkbox
+                    style={{
+                      color: "#e07c00",
+                    }}
+                    onChange={(e) => props.onChange(e.target.checked)}
+                    checked={props.value}
+                  />
+                )}
+              />
               }
               label="Learned by the Receiving Party through legitimate means other than
               from the Disclosing Party or Disclosing Party's representatives"
@@ -142,14 +151,18 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  as={Checkbox}
-                  control={control}
-                  defaultValue="true"
-                  name="confidentiality_4"
-                  style={{
-                    color: "#e07c00",
-                  }}
-                />
+                name="confidentiality_4"
+                control={control}
+                render={(props) => (
+                  <Checkbox
+                    style={{
+                      color: "#e07c00",
+                    }}
+                    onChange={(e) => props.onChange(e.target.checked)}
+                    checked={props.value}
+                  />
+                )}
+              />
               }
               label="Information independently developed without the use of any of the
               provided Confidential Information"
@@ -158,14 +171,18 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  as={Checkbox}
-                  control={control}
-                  defaultValue="true"
-                  name="confidentiality_5"
-                  style={{
-                    color: "#e07c00",
-                  }}
-                />
+                name="confidentiality_5"
+                control={control}
+                render={(props) => (
+                  <Checkbox
+                    style={{
+                      color: "#e07c00",
+                    }}
+                    onChange={(e) => props.onChange(e.target.checked)}
+                    checked={props.value}
+                  />
+                )}
+              />
               }
               label="Is disclosed by Receiving Party with Disclosing Party's prior
               written approval"
@@ -174,13 +191,18 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
-                  as={Checkbox}
-                  control={control}
-                  name="confidentiality_other"
-                  style={{
-                    color: "#e07c00",
-                  }}
-                />
+                name="confidentiality_6"
+                control={control}
+                render={(props) => (
+                  <Checkbox
+                    style={{
+                      color: "#e07c00",
+                    }}
+                    onChange={(e) => props.onChange(e.target.checked)}
+                    checked={props.value}
+                  />
+                )}
+              />
               }
               label=" Other exceptions"
             />

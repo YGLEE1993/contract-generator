@@ -44,7 +44,7 @@ createStore({
     recipientName: "",
     recipientEntity: "",
     recipientAddressStreet: "",
-    recipientAddressStreet2: " ",
+    recipientAddressStreet2: "",
     recipientAddressCity: "",
     recipientAddressState: "",
     recipientAddressZipcode: "",
@@ -59,6 +59,7 @@ createStore({
     confidentiality_3: "",
     confidentiality_4: "",
     confidentiality_5: "",
+    confidentiality_6: "",
     confidentiality_other: "",
 
     otherInformation: "",

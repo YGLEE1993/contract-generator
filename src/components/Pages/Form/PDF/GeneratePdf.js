@@ -63,32 +63,32 @@ export default function GeneratePdf() {
   // ************** Confidentiality.3b ************** //
 
   var confidentiality3b = [];
-  if (state.formDetails.confidentiality_1 === "true") {
+  if (state.formDetails.confidentiality_1 === true) {
     confidentiality3b.push(
       "publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party;\n\n"
     );
   }
-  if (state.formDetails.confidentiality_2 === "true") {
+  if (state.formDetails.confidentiality_2 === true) {
     confidentiality3b.push(
       "discovered, created by, or rightfully in the possession of the Receiving Party before disclosure by Disclosing Party and prior to signing this Agreement;\n\n"
     );
   }
-  if (state.formDetails.confidentiality_3 === "true") {
+  if (state.formDetails.confidentiality_3 === true) {
     confidentiality3b.push(
       "learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives;\n\n"
     );
   }
-  if (state.formDetails.confidentiality_4 === "true") {
+  if (state.formDetails.confidentiality_4 === true) {
     confidentiality3b.push(
-      "information independently developed without the use of any of the provided Confdential Information;\n\n"
+      "information independently developed without the use of any of the provided Confidential Information;\n\n"
     );
   }
-  if (state.formDetails.confidentiality_5 === "true") {
+  if (state.formDetails.confidentiality_5 === true) {
     confidentiality3b.push(
-      "information independently developed without the use of any of the provided Confdential Information;\n\n"
+      "information independently developed without the use of any of the provided Confidential Information;\n\n"
     );
   }
-  if (state.formDetails.confidentiality_other !== "") {
+  if (state.formDetails.confidentiality_other !== "" && state.formDetails.confidentiality_6 === true) {
     confidentiality3b.push(`${state.formDetails.confidentiality_other};\n\n`);
   }
 
