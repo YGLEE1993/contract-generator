@@ -3,7 +3,7 @@ import Header from "./components/UI/Header/Header";
 import Footer from "./components/UI/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { StateMachineProvider, createStore } from "little-state-machine";
-// import { DevTool } from "little-state-machine-devtools";
+import { DevTool } from "little-state-machine-devtools";
 
 import LandingPage from "./components/Pages/LandingPage/LandingPage";
 import GetStarted from "./components/Pages/GetStarted/GetStarted";
@@ -80,7 +80,7 @@ createStore({
 function App() {
   return (
     <StateMachineProvider>
-      {/* <DevTool /> */}
+      <DevTool />
       <Router>
         <Header />
         <Switch>

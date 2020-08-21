@@ -59,7 +59,7 @@ const Disclosing = (props) => {
 
           {/*********  2. Discloser Business *********/}
           <div style={{ marginBottom: "40px" }}>
-            <h2 className="form-question">Business Name(if different)</h2>
+            <h2 className="form-question">Business Name (if different)</h2>
             <Controller
               as={
                 <TextField

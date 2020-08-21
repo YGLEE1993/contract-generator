@@ -15,7 +15,7 @@ const { Option } = Select;
 
 const tip1 = (
   <span style={{ color: "white", fontSize: "18px" }}>
-    <b>What is Medical Non Non-Discolsure Agreement?</b>
+    <b>What is Medical Non-Discolsure Agreement?</b>
     <br />A Medical NDA is an arrangement used specifically for the healthcare
     personnel, employees and professsionals who have access to medical
     information.
@@ -56,12 +56,12 @@ export default () => {
           {/*     1. NDA     */}
           <div style={{ marginBottom: "40px" }}>
             <h1 className="form-question">
-              Will this be a Medical Non-Discolsure Agreement?
-              <Tooltip placement="right" tips={tip1} />
+              This Non-Disclosure Agreement does not cover healthcare personnel, employees and professsionals who have access to medical information.
+              {/* <Tooltip placement="right" tips={tip1} /> */}
             </h1>
             {errors.formType && <p className="required">This is required.</p>}
-            {/* option 1 */}
-            <div style={{ marginTop: "20px" }}>
+            
+            {/* <div style={{ marginTop: "20px" }}>
               <input
                 type="radio"
                 name="formType"
@@ -76,7 +76,7 @@ export default () => {
               </label>
             </div>
 
-            {/* option 2 */}
+            
             <div style={{ marginBottom: "40px" }}>
               <input
                 disabled
@@ -92,7 +92,7 @@ export default () => {
                 {" "}
                 Yes
               </label>
-            </div>
+            </div> */}
           </div>
           {/*     2. Contract Date     */}
 

@@ -155,7 +155,7 @@ export default function GeneratePdf() {
       },
       {
         text: [
-          { text: "WHEREAS, ", bold: true, decoration: "underline" },
+          { text: "WHEREAS, ", bold: true },
           "in connection with a relationship involving Disclosing Party and Receiving Party described in paragraph 1 of this Agreement, Receiving Party may receive or have access to certain information, which is non- public, confidential or proprietary in nature; and\n\n",
           { text: "WHEREAS, ", bold: true },
           "the Disclosing Party wishes to protect and preserve the confidentiality of such information, preventing the unauthorized disclosure of Confidential Information, including Trade Secrets and Proprietary Information as defined below.\n\n",
