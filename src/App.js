@@ -18,6 +18,8 @@ import DownloadTO from "./components/Pages/Form/DownloadTo/DownloadTo";
 import PDF from "./components/Pages/Form/PDF/PDF";
 import Complete from "./components/Pages/Form/Complete/Complete";
 
+import MainPage from "./components/Pages/MainPage/MainPage";
+
 
 createStore({
   formDetails: {
@@ -85,7 +87,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={LandingPage} />
+          {/* <Route exact path="/" component={LandingPage} /> */}
+          <Route exact path="/" component={MainPage} />
+          <Route path="/landing" component={LandingPage} />
           <Route path="/getStarted" component={GetStarted} />
 
           <Route path="/general" component={General} />
