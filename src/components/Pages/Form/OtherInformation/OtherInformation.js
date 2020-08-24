@@ -78,7 +78,7 @@ const OtherInformation = (props) => {
 
 const otherInfo = (
   <span style={{ color: "white", fontSize: "18px" }}>
-    What can be inculded in the other information?
+    *<b>Optional</b> <br/>What can be inculded in the other information?
   </span>
 );
 export default OtherInformation;

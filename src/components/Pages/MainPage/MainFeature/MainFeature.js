@@ -33,15 +33,15 @@ export default function MainFeature() {
         </Row>
 
         <Row className="feature-section">
-          <Col md={{ span: 4 }}>
+          <Col lg={{ span: 4 }}>
             <img src={Feature1} alt="feature 1" className="feature-img" />
             <h2>FREE!</h2>
           </Col>
-          <Col md={{ span: 4 }}>
+          <Col lg={{ span: 4 }}>
             <img src={Feature2} alt="feature 2" className="feature-img" />
             <h2>No sign-up</h2>
           </Col>
-          <Col md={{ span: 4 }}>
+          <Col lg={{ span: 4 }}>
             <img src={Feature3} alt="feature 3" className="feature-img" />
             <h2>Step-by-step</h2>
           </Col>

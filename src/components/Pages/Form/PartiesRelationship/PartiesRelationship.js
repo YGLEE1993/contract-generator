@@ -10,7 +10,7 @@ import Tooltip from "../../../UI/Tooltip/Tooltip";
 const relationshipTip = (
   <span style={{ color: "white", fontSize: "18px"}}>
     <b>* Optional</b> <br />
-    Further discribe relationship between Disclosing Party and the Receiving Party. 
+    Further discribe relationship between the Disclosing Party and Receiving Party. 
   </span>
 );
 
@@ -55,11 +55,11 @@ const PartiesRelationship = (props) => {
               control={control}
               ref={register({ required: true })}
               name="relationship"
-              rules={{ required: true }}
+              // rules={{ required: true }}
             />
-            {errors.relationship && (
+            {/* {errors.relationship && (
               <p className="required">This is required.</p>
-            )}
+            )} */}
           </div>
           {/*********  Steps  *********/}
           <div style={{ marginTop: "300px" }}>

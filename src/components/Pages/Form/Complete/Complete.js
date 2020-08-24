@@ -33,7 +33,7 @@ const Complete = (props) => {
                 reset();
                 e.preventDefault();
                 window.STATE_MACHINE_RESET();
-                window.location.href = "/";
+                window.location.href = "/landing";
               }}
             >
               Create another form
@@ -44,6 +44,10 @@ const Complete = (props) => {
             href="https://www.harmonizehq.com"
             rel="noopener noreferrer"
             target="_blank"
+            onClick={(e)=>{
+              e.preventDefault();
+              window.STATE_MACHINE_RESET();
+            }}
           >
             Need a simple solution for all your HR management needs? Check out
             how HarmonizeHQ can help!

@@ -25,6 +25,12 @@ export default function GeneratePdf() {
     push("/downloadTo");
   };
 
+  var partiesRelationship;
+  if(state.formDetails.relationship !== ""){
+    partiesRelationship = ` ${state.formDetails.relationship} .`
+  }else{
+    partiesRelationship = ""
+  }
   // ************** Time Period ************** //
   var timePeriod;
   if (state.formDetails.timePeriod === "Survive its termination") {
@@ -169,7 +175,7 @@ export default function GeneratePdf() {
           { text: "1.            Parties Relationship. ", bold: true },
           "The Disclosing Party’s relationship to the Receiving Party can be described as ",
           {
-            text: ` ${state.formDetails.relationship} `,
+            text: ` ${state.formDetails.discloserEntity} `,
             decoration: "underline",
             style: "userInput",
           },
@@ -181,11 +187,11 @@ export default function GeneratePdf() {
           },
           ". ",
           {
-            text: ` ${state.formDetails.relationship} `,
+            text: `${partiesRelationship}`,
             decoration: "underline",
             style: "userInput",
           },
-          ". \n\n",
+          " \n\n",
         ],
       },
       {
