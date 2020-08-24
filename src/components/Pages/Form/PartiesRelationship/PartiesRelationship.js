@@ -9,8 +9,8 @@ import Tooltip from "../../../UI/Tooltip/Tooltip";
 
 const relationshipTip = (
   <span style={{ color: "white", fontSize: "18px"}}>
-    <b>* Optional</b> <br />
-    Further discribe relationship between the Disclosing Party and Receiving Party. 
+    <b>How does relationship type affect my contract?</b> <br />
+    Specifying working relationship type between parties in the NDA helps to establish the purpose of the Agreement.
   </span>
 );
 

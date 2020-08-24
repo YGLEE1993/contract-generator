@@ -34,11 +34,11 @@ export default function GeneratePdf() {
   // ************** Time Period ************** //
   var timePeriod;
   if (state.formDetails.timePeriod === "Survive its termination") {
-    timePeriod = `The non- disclosure provisions of this Agreement shall survive the termination
-    of this Agreement and Receiving Party's duty to hold Confdential Information in confdence shall
-    remain in effect until the Confdential Information no longer qualifes as a trade secret, in case of
+    timePeriod = `The non-disclosure provisions of this Agreement shall survive the termination
+    of this Agreement and Receiving Party's duty to hold Confidential Information in confidence shall
+    remain in effect until the Confidential Information no longer qualifies as a trade secret, in case of
     trade secrets, or until Disclosing Party sends Receiving Party a written notice releasing Receiving
-    Party from this Agreement, whichever occurs frst.\n\n`;
+    Party from this Agreement, whichever occurs first.\n\n`;
   }
   if (state.formDetails.timePeriod === "years") {
     timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
@@ -51,19 +51,19 @@ export default function GeneratePdf() {
   // ************** Confidential Information.2d ************** //
 
   var confidentiality2d;
-  if (state.formDetails.otherInformation !== null) {
-    confidentiality2d = ` Such as ${state.formDetails.otherInformation.toLowerCase()}.\n\n`;
+  if (state.formDetails.otherInformation !== "") {
+    confidentiality2d = ` Such as ${state.formDetails.otherInformation}.\n\n`;
   }
 
-  // ************** Confidentiality.3b ************** //
+  // ************** Confidentiality.3a ************** //
   var confidentiality3a;
   if (state.formDetails.confidentialityAll === "false") {
     confidentiality3a =
-      'If Confdential Information is in written form, the Disclosing Party shall label or stamp the materials with the word "Confdential" or some similar warning. If Confdential Information is transmitted orally, the Disclosing Party shall promptly provide writing indicating that such oral communication constituted Confdential Information.\n\n';
+      'If Confidential Information is in written form, the Disclosing Party shall label or stamp the materials with the word "Confidential" or some similar warning. If Confidential Information is transmitted orally, the Disclosing Party shall promptly provide writing indicating that such oral communication constituted Confidential Information.\n\n';
   }
   if (state.formDetails.confidentialityAll === "true") {
     confidentiality3a =
-      "The Disclosing Party herein, not the Receiving Party, is the records owner under state law and the Receiving Party has no right or ownership interest in any confdential information. The above Information shall be considered Confdential regardless of whether such Confdential Information has been expressly designated as confdential or proprietary.\n\n";
+      "The Disclosing Party herein, not the Receiving Party, is the records owner under state law and the Receiving Party has no right or ownership interest in any confidential information. The above Information shall be considered Confidential regardless of whether such Confidential Information has been expressly designated as confidential or proprietary.\n\n";
   }
 
   // ************** Confidentiality.3b ************** //
@@ -91,7 +91,7 @@ export default function GeneratePdf() {
   }
   if (state.formDetails.confidentiality_5 === true) {
     confidentiality3b.push(
-      "information independently developed without the use of any of the provided Confidential Information;\n\n"
+      "is disclosed by Receiving Party with Disclosing Party's prior written approval;\n\n"
     );
   }
   if (state.formDetails.confidentiality_other !== "" && state.formDetails.confidentiality_6 === true) {
@@ -234,7 +234,7 @@ export default function GeneratePdf() {
             text: "4.            Obligations of Receiving Party.  ",
             bold: true,
           },
-          "Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party. Receiving Party shall not, ithout the prior written approval of Disclosing Party, use for Receiving Party's benefit, publish, copy, or otherwise disclose to others, or permit the use by others for their benefit or to the detriment of Disclosing Party, any Confidential Information. Receiving Party shall return to the Disclosing Party or destroy any and all records, notes, and other written, printed, or tangible materials in its possession pertaining to Confidential Information immediately if the Disclosing Party requests it and/ or when the Receiving Party’s cooperation with the Disclosing Party ends, for whatever reason.\n\n",
+          "Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party. Receiving Party shall not, without the prior written approval of Disclosing Party, use for Receiving Party's benefit, publish, copy, or otherwise disclose to others, or permit the use by others for their benefit or to the detriment of Disclosing Party, any Confidential Information. Receiving Party shall return to the Disclosing Party or destroy any and all records, notes, and other written, printed, or tangible materials in its possession pertaining to Confidential Information immediately if the Disclosing Party requests it and/ or when the Receiving Party’s cooperation with the Disclosing Party ends, for whatever reason.\n\n",
         ],
       },
       {

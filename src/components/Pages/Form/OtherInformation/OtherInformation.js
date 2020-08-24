@@ -78,7 +78,8 @@ const OtherInformation = (props) => {
 
 const otherInfo = (
   <span style={{ color: "white", fontSize: "18px" }}>
-    *<b>Optional</b> <br/>What can be inculded in the other information?
+    <b>What can be included in "other information"?</b> <br/>
+    You can include specific kinds of information to which you would like to extend a protection.
   </span>
 );
 export default OtherInformation;
