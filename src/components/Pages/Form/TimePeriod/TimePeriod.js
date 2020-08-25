@@ -151,17 +151,16 @@ const TimePeriod = (props) => {
 };
 export default TimePeriod;
 
-const timePeriodTip1 = (
+const timePeriodTip2 = (
   <span style={{ color: "white", fontSize: "18px" }}>
     <b>What should the duration of my contract be?</b><br/> The usual time of protection for
     ordinary confidential information is 2 to 5 years which is what we suggest.
   </span>
 );
 
-const timePeriodTip2 = (
+const timePeriodTip1 = (
   <span style={{ color: "white", fontSize: "18px" }}>
-    <b>How does relationship type affect my contract?</b><br/> Specifying working
-    relationship type between parties in the NDA helps to establish the purpose
-    of the Agreement.
+    <b>What does "survive it's termination" mean?</b><br/> To survive the termination 
+    of the Agreement means that there is no end date to keep the information secret.
   </span>
 );

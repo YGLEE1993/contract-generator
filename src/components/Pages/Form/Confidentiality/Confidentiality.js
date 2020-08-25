@@ -9,9 +9,8 @@ import Navigation from "../../../Navigation/Navigation";
 
 const confidentialTip = (
   <span style={{ color: "white", fontSize: "18px" }}>
-    <b>How does relationship type affect my contract? </b> <br />
-    Specifying working relationship type between parties in the NDA helps to
-    establish the purpose of the Agreement.
+    <b>What does confidentiality mean? </b> <br />
+    Confidentiality means that the recipient will not share the information that they have recieved with anyone else. We suggest selecting "everything" to include ample protection.
   </span>
 );
 
@@ -250,7 +249,7 @@ const Confidentiality = (props) => {
           {/*********  Steps  *********/}
           <div style={{ marginTop: "10px" }}>
             <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+            <div style={{ marginTop: "15px", marginBottom: "50px" }}>
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>

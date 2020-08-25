@@ -41,7 +41,7 @@ export default function GeneratePdf() {
     Party from this Agreement, whichever occurs first.\n\n`;
   }
   if (state.formDetails.timePeriod === "years") {
-    timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
+    timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for \b ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
   }
 
   if (state.formDetails.timePeriod === "occurance") {
@@ -65,7 +65,7 @@ export default function GeneratePdf() {
   }
   if (state.formDetails.confidentialityAll === "true") {
     confidentiality3a =
-      "The Disclosing Party herein, not the Receiving Party, is the records owner under state law and the Receiving Party has no right or ownership interest in any confidential information. The above Information shall be considered Confidential regardless of whether such Confidential Information has been expressly designated as confidential or proprietary.\n\n";
+      "The above Information shall be considered Confidential regardless of whether such Confidential Information has been expressly designated as confidential or proprietary.\n\n";
   }
 
   // ************** Confidentiality.3b ************** //
@@ -113,6 +113,7 @@ export default function GeneratePdf() {
     title: "NDA",
     // pageSize: 'A5',
     // pageMargins: [ 40, 60, 40, 60 ],
+    pageMargins:72,
     watermark: {
       text: "PROOF PROOF",
       color: "black",
@@ -215,6 +216,7 @@ export default function GeneratePdf() {
       {
         text: [
           { text: "3a.            Form of Disclosure. ", bold: true },
+          'The Disclosing Party herein, not the Receiving Party, is the records owner under state law and the Receiving Party has no right or ownership interest in any confidential information.\n\n',
           `${confidentiality3a}`,
         ],
       },
@@ -342,36 +344,38 @@ export default function GeneratePdf() {
           "IN WITNESS WHEREOF, the parties have executed this Agreement effective as of the Effective Date.\n\n",
           { text: "DISCLOSING PARTY \n\n", bold: true },
           "Signature _____________________________________________________\n\n",
-          "Typed or Printed Name",
-          {
-            text: `            ${state.formDetails.discloserName}            `,
-            decoration: "underline",
-            style: "userInput",
-          },
-          "Date: ",
-          {
-            text: `   ${state.formDetails.contractDate}   \n\n`,
-            decoration: "underline",
-            style: "userInput",
-          },
+          "Typed or Printed Name ________________________ Date:______________\n\n",
+          // "Typed or Printed Name",
+          // {
+          //   text: `            ${state.formDetails.discloserName}            `,
+          //   decoration: "underline",
+          //   style: "userInput",
+          // },
+          // "Date: ",
+          // {
+          //   text: `   ${state.formDetails.contractDate}   \n\n`,
+          //   decoration: "underline",
+          //   style: "userInput",
+          // },
         ],
       },
       {
         text: [
           { text: "RECEIVING PARTY \n\n", bold: true },
           "Signature _____________________________________________________\n\n",
-          "Typed or Printed Name",
-          {
-            text: `            ${state.formDetails.recipientName}            `,
-            decoration: "underline",
-            style: "userInput",
-          },
-          "Date: ",
-          {
-            text: `   ${state.formDetails.contractDate}   \n\n`,
-            decoration: "underline",
-            style: "userInput",
-          },
+          "Typed or Printed Name ________________________ Date:______________\n\n",
+          // "Typed or Printed Name",
+          // {
+          //   text: `            ${state.formDetails.recipientName}            `,
+          //   decoration: "underline",
+          //   style: "userInput",
+          // },
+          // "Date: ",
+          // {
+          //   text: `   ${state.formDetails.contractDate}   \n\n`,
+          //   decoration: "underline",
+          //   style: "userInput",
+          // },
         ],
       },
     ],

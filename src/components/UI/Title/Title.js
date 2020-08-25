@@ -7,7 +7,7 @@ export default function Title() {
     <span style={{ color: "white", fontSize: '18px'}}>
       <b>How is the form created?</b> <br/>Your response to each question determines
       what goes into your customized contract. Make sure to fill out all fields
-      so we can help you put everything together! you can find out the
+      so we can help you put everything together! You can find out the
       additional information throughout by hovering over <b>!</b> icon.{" "}
       <Tooltip /> 
     </span>

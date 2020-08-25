@@ -42,7 +42,7 @@ const OtherInformation = (props) => {
             <Controller
               as={
                 <TextField
-                  label="Ex. Example"
+                  label="*Optional"
                   style={{ width: "80%", marginTop: "10px" }}
                   inputRef={register}
                   bordered={false}

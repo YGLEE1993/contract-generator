@@ -62,7 +62,7 @@ const Recieving = (props) => {
             <Controller
               as={
                 <TextField
-                  label="Ex. Individual"
+                  label="Ex. Employee"
                   style={{ width: "40%" }}
                   bordered={false}
                 />

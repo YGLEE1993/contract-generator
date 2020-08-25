@@ -57,7 +57,7 @@ const Complete = (props) => {
           <div>
             <div style={{ marginTop: "5rem"}}>
               <h3 className="sub-headings">
-                We are always trying to improve, help us make this tool better
+                We are always trying to improve. Help us make this tool better
                 by sending us feedback!
               </h3>
             </div>

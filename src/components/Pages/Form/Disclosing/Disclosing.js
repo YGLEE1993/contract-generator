@@ -236,7 +236,7 @@ const Disclosing = (props) => {
           {/*********  Steps  *********/}
           <div>
             <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+            <div style={{ marginTop: "15px", marginBottom: "50px"}}>
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>
