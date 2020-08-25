@@ -41,7 +41,7 @@ export default function GeneratePdf() {
     Party from this Agreement, whichever occurs first.\n\n`;
   }
   if (state.formDetails.timePeriod === "years") {
-    timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for \b ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
+    timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
   }
 
   if (state.formDetails.timePeriod === "occurance") {
@@ -209,7 +209,7 @@ export default function GeneratePdf() {
           "(c) information submitted by Disclosing Party’s customers, suppliers, employees, consultants or co-venture partners with Disclosing Party for study, evaluation or use; and\n\n",
           "(d) any other information not generally known to the public which, if misused or disclosed, could reasonably be expected to adversely affect the Disclosing Party’s business.",
           `${confidentiality2d}`,
-          "\n\nConfidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
+          "Confidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
         ],
       },
 
@@ -387,7 +387,7 @@ export default function GeneratePdf() {
       userInput: {
         fontSize: 11,
         bold: true,
-        lineHeight: 1.3,
+        lineHeight: 1,
       },
     },
   };

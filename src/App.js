@@ -52,7 +52,7 @@ createStore({
     recipientAddressZipcode: "",
     // recipientPhone: "",
 
-    relationship: "",
+    // relationship: "",
     disclosingToReceiving:"",
     receivingToDisclosing: "",
 

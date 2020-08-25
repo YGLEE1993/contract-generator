@@ -85,7 +85,7 @@ const PartiesRelationship = (props) => {
           </div>
 
           {/*********  Steps  *********/}
-          <div style={{ marginTop: "100px" }}>
+          <div style={{ marginTop: "150px" }}>
             <div className="form-end"></div>
             <div style={{ marginTop: "15px" }}>
               <button className="Back-Button" onClick={onBackStep}>
