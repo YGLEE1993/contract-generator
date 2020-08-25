@@ -97,7 +97,7 @@ export default function GeneratePdf() {
     );
   }
   if (state.formDetails.confidentiality_other !== "" && state.formDetails.confidentiality_6 === true) {
-    confidentiality3b.push(`${state.formDetails.confidentiality_other};\n\n`);
+    confidentiality3b.push(`${state.formDetails.confidentiality_other.toLowerCase()};\n\n`);
   }
 
   // Ordered list - Confidentiality.3b
