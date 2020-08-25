@@ -25,12 +25,12 @@ export default function GeneratePdf() {
     push("/downloadTo");
   };
 
-  var partiesRelationship;
-  if(state.formDetails.relationship !== ""){
-    partiesRelationship = ` ${state.formDetails.relationship} .`
-  }else{
-    partiesRelationship = ""
-  }
+  // var partiesRelationship;
+  // if(state.formDetails.relationship !== ""){
+  //   partiesRelationship = ` ${state.formDetails.relationship} .`
+  // }else{
+  //   partiesRelationship = ""
+  // }
   // ************** Time Period ************** //
   var timePeriod;
   if (state.formDetails.timePeriod === "Survive its termination") {
@@ -178,23 +178,23 @@ export default function GeneratePdf() {
           { text: "1.            Parties Relationship. ", bold: true },
           "The Disclosing Party’s relationship to the Receiving Party can be described as ",
           {
-            text: ` ${state.formDetails.discloserEntity} `,
+            text: ` ${state.formDetails.disclosingToReceiving} `,
             decoration: "underline",
             style: "userInput",
           },
           " and the Receiving Party’s relationship to the Disclosing Party can be described as ",
           {
-            text: ` ${state.formDetails.recipientEntity} `,
+            text: ` ${state.formDetails.receivingToDisclosing} `,
             decoration: "underline",
             style: "userInput",
           },
           ". ",
-          {
-            text: `${partiesRelationship}`,
-            decoration: "underline",
-            style: "userInput",
-          },
-          " \n\n",
+          // {
+          //   text: `${partiesRelationship}`,
+          //   decoration: "underline",
+          //   style: "userInput",
+          // },
+          // " \n\n",
         ],
       },
       {

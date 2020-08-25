@@ -40,8 +40,7 @@ const PartiesRelationship = (props) => {
           {/*********  Parties Relationship *********/}
           <div style={{ marginBottom: "40px" }}>
             <h2 className="form-question">
-              What is the Disclosing Party's relationship to the Receiving
-              Party?{" "}
+            What is the relation of the Disclosing Party to Receiving Party?
               <Tooltip placement="right" tips={relationshipTip} /> 
             </h2>
             <Controller
@@ -54,15 +53,39 @@ const PartiesRelationship = (props) => {
               }
               control={control}
               ref={register({ required: true })}
-              name="relationship"
-              // rules={{ required: true }}
+              name="disclosingToReceiving"
+              rules={{ required: true }}
             />
-            {/* {errors.relationship && (
+            {errors.disclosingToReceiving && (
               <p className="required">This is required.</p>
-            )} */}
+            )}
           </div>
+
+                    {/*********  Parties Relationship *********/}
+                    <div style={{ marginBottom: "40px" }}>
+            <h2 className="form-question">
+            What is the relation of Receiving Party to Disclosing Party?
+            </h2>
+            <Controller
+              as={
+                <TextField
+                  label="Ex. Employee"
+                  style={{ width: "40%", marginTop: "10px" }}
+                  bordered={false}
+                />
+              }
+              control={control}
+              ref={register({ required: true })}
+              name="receivingToDisclosing"
+              rules={{ required: true }}
+            />
+            {errors.receivingToDisclosing && (
+              <p className="required">This is required.</p>
+            )}
+          </div>
+
           {/*********  Steps  *********/}
-          <div style={{ marginTop: "300px" }}>
+          <div style={{ marginTop: "100px" }}>
             <div className="form-end"></div>
             <div style={{ marginTop: "15px" }}>
               <button className="Back-Button" onClick={onBackStep}>

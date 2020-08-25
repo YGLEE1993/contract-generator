@@ -5,7 +5,7 @@ import logo from "../../Assets/harmonize_logo.png";
 
 export default function Footer() {
   return (
-    <Navbar fixed="bottom" className="footer" >
+    <Navbar fixed="bottom" className="footer" expand="xl">
       <Navbar.Collapse className="justify-content-end">
         <Navbar.Brand 
             href="https://www.harmonizehq.com">

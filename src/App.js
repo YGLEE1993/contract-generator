@@ -53,6 +53,8 @@ createStore({
     // recipientPhone: "",
 
     relationship: "",
+    disclosingToReceiving:"",
+    receivingToDisclosing: "",
 
     // Confidentiality
     confidentialityAll: false,
