@@ -53,6 +53,8 @@ export default function GeneratePdf() {
   var confidentiality2d;
   if (state.formDetails.otherInformation !== "") {
     confidentiality2d = ` Such as ${state.formDetails.otherInformation}.\n\n`;
+  }else{
+    confidentiality2d="";
   }
 
   // ************** Confidentiality.3a ************** //
@@ -206,7 +208,7 @@ export default function GeneratePdf() {
           "(c) information submitted by Disclosing Party’s customers, suppliers, employees, consultants or co-venture partners with Disclosing Party for study, evaluation or use; and\n\n",
           "(d) any other information not generally known to the public which, if misused or disclosed, could reasonably be expected to adversely affect the Disclosing Party’s business.",
           `${confidentiality2d}`,
-          "Confidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
+          "\n\nConfidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
         ],
       },
 
