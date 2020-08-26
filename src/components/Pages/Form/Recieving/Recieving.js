@@ -56,7 +56,7 @@ const Recieving = (props) => {
             )}
           </div>
 
-          {/*********  2. Recipient Entity *********/}
+          {/* ********  2. Recipient Entity ********
           <div style={{ marginBottom: "40px" }}>
             <h2 className="form-question">Recipient Entity</h2>
             <Controller
@@ -74,11 +74,11 @@ const Recieving = (props) => {
             {errors.recipientEntity && (
               <p className="required">This is required.</p>
             )}
-          </div>
+          </div> */}
 
           {/*********  3. Recipient  Address *********/}
           <div style={{ marginBottom: "70px" }}>
-            <h2 className="form-question">Discloser Address</h2>
+            <h2 className="form-question">Recipient Address</h2>
             {(errors.recipientAddressStreet ||
               errors.recipientAddressCity ||
               errors.recipientAddressState ||

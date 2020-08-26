@@ -78,7 +78,7 @@ const Disclosing = (props) => {
           </div>
 
           {/*********  3. Discloser Entity *********/}
-          <div style={{ marginBottom: "40px" }}>
+          {/* <div style={{ marginBottom: "40px" }}>
             <h2 className="form-question">Discloser Entity</h2>
             <Controller
               as={
@@ -95,7 +95,7 @@ const Disclosing = (props) => {
             {errors.discloserEntity && (
               <p className="required">This is required.</p>
             )}
-          </div>
+          </div> */}
 
           {/*********  4. Discloser Address *********/}
 

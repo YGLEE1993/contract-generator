@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://www.harmonizehq.com">
             <img src={logo} alt="harmonize_logo" width="45.3" height="37" style={{marginBottom:"10px"}}/>
         </Navbar.Brand>
-        <Navbar.Text className="footer-text">Powered by Harmonizehq</Navbar.Text>
+        <Navbar.Brand href="https://www.harmonizehq.com" className="footer-text">Powered by Harmonizehq</Navbar.Brand>
       </Navbar.Collapse>
     </Navbar>
     // <div fixed="bottom" className="justify-content-end">
