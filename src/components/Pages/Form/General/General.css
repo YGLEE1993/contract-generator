@@ -1,9 +1,7 @@
 .form-container {
-  margin-left: 550px;
   margin-top: 68px;
   background-color: white ;
-  width: 30% ;
-  min-width:500px;
+  width:500px;
 }
 
 .SelectState {

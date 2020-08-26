@@ -9,7 +9,8 @@ import updateAction from "../../../../updateAction";
 import { TextField } from "@material-ui/core";
 import { Select } from "antd";
 import "antd/dist/antd.css";
-// import Title from "../../../UI/Title/Title";
+import { Container, Row, Col } from "react-bootstrap";
+import Title from "../../../UI/Title/Title";
 
 const { Option } = Select;
 
@@ -49,9 +50,13 @@ export default () => {
   };
 
   return (
-    <>
-      <Navigation />
+    <Container>
+      <Row>
+      <Col xs={3}><Navigation /></Col>
+      <Col>
+
       <form onSubmit={handleSubmit(onNextStep)}>
+          <Title />
         <div className="form-container">
           {/*     1. NDA     */}
           <div style={{ marginBottom: "40px" }}>
@@ -211,6 +216,8 @@ export default () => {
           </div>
         </div>
       </form>
-    </>
+      </Col>
+      </Row>
+    </Container>
   );
 };

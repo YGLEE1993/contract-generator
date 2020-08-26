@@ -5,17 +5,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import { Layout } from "antd";
-import Title from "../UI/Title/Title";
+// import Title from "../UI/Title/Title";
 
 export default function Navigation() {
   const location = useLocation();
 
-  const { Sider } = Layout;
-
   return (
     <>
       <div className="side">
-        <Sider id="sideBar">
           <nav>
             <ul className="steps">
               
@@ -64,9 +61,7 @@ export default function Navigation() {
               </li>
             </ul>
           </nav>
-        </Sider>
       </div>
-      <Title />
     </>
   );
 }

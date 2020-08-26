@@ -22,20 +22,21 @@
   color: black;
 }
 
-#sidebar {
+/* #sidebar {
   background-color: white !important;
   width: 30% !important;
   flex: 0 0 !important;
   max-width: 30% !important;
   min-width: 30% !important;
   margin-left: 40% !important;
-}
+} */
+
 .steps {
   display: block;
   float: left;
   margin-right: 20px;
   margin-top: 215.7px;
-  margin-left: 224px;
+  /* margin-left: 224px; */
   list-style-type: none;
 }
 
