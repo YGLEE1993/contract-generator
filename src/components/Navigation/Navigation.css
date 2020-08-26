@@ -9,11 +9,11 @@
 
 .sidebar-item {
   font-family: "Nunito";
-  font-size: 18px;
+  font-size: 15px;
   color: #868383;
   /* width: 45px; */
   /* height: 24px; */
-  line-height: 41px;
+  line-height: 40px;
   text-decoration-line: none;
   outline: none;
 }
@@ -35,13 +35,13 @@
   display: block;
   float: left;
   margin-right: 20px;
-  margin-top: 200.7px;
+  margin-top: 172.7px;
   /* margin-left: 224px; */
   list-style-type: none;
 }
 
 .active .sidebar-item {
-  font-size: 20px;
+  font-size: 17px;
   color: black;
 }
 

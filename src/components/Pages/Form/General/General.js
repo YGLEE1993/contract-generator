@@ -11,17 +11,7 @@ import { Select } from "antd";
 import "antd/dist/antd.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../UI/Title/Title";
-
 const { Option } = Select;
-
-// const tip1 = (
-//   <span style={{ color: "white", fontSize: "18px" }}>
-//     <b>What is Medical Non-Discolsure Agreement?</b>
-//     <br />A Medical NDA is an arrangement used specifically for the healthcare
-//     personnel, employees and professsionals who have access to medical
-//     information.
-//   </span>
-// );
 
 const tip2 = (
   <span style={{ color: "white", fontSize: "18px" }}>
@@ -59,7 +49,7 @@ export default () => {
           <Title />
         <div className="form-container">
           {/*     1. NDA     */}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "30px" }}>
             <h1 className="form-question">
               This Non-Disclosure Agreement does not cover healthcare personnel, employees and professsionals who have access to medical information.
               {/* <Tooltip placement="right" tips={tip1} /> */}
@@ -114,7 +104,7 @@ export default () => {
               as={
                 <TextField
                   label="Select Date"
-                  style={{ width: "40%", marginTop: "20px" }}
+                  style={{ width: "40%", marginTop: "5px" }}
                   name="contractDate"
                   id="date"
                   type="date"
@@ -130,7 +120,7 @@ export default () => {
 
           {/*     3. State      */}
 
-          <div style={{ marginBottom: "60px" }}>
+          <div style={{ marginBottom: "40px" }}>
             <h1 className="form-question">
               Under which state jurisdiction should the contract be created?
               <Tooltip placement="right" tips={tip2} />
