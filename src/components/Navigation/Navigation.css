@@ -1,6 +1,6 @@
 .steps li {
-  width: 224px;
-  border-bottom: 1.9px solid #868383;
+  width: 210px;
+  border-bottom: 1.4px solid #868383;
   font-family: "Nunito";
   font-size: 16px;
 }
@@ -9,11 +9,11 @@
 
 .sidebar-item {
   font-family: "Nunito";
-  font-size: 20px;
+  font-size: 18px;
   color: #868383;
-  width: 49px;
-  height: 24px;
-  line-height: 48px;
+  /* width: 45px; */
+  /* height: 24px; */
+  line-height: 41px;
   text-decoration-line: none;
   outline: none;
 }
@@ -35,13 +35,13 @@
   display: block;
   float: left;
   margin-right: 20px;
-  margin-top: 215.7px;
+  margin-top: 200.7px;
   /* margin-left: 224px; */
   list-style-type: none;
 }
 
 .active .sidebar-item {
-  font-size: 22px;
+  font-size: 20px;
   color: black;
 }
 

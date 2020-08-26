@@ -16,7 +16,7 @@ export default function Navigation() {
           <nav>
             <ul className="steps">
               
-              <li className={location.pathname === "/general" ? "active" : ""} style={{borderTop: "1.9px solid #868383", width: "224px"}}>
+              <li className={location.pathname === "/general" ? "active" : ""} style={{borderTop: "1.4px solid #868383", width: "210px"}}>
                 <Link className="sidebar-item" to="/general" >
                   General
                 </Link>
