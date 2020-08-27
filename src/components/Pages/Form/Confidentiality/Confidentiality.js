@@ -60,7 +60,7 @@ const Confidentiality = (props) => {
                 defaultChecked={state.formDetails.formType === "Everything"}
               />
               <label
-                style={{ color: "grey", marginLeft: "10px"}}
+                style={{ marginLeft: "10px"}}
                 class="radio"
               >
                 Everything
@@ -77,7 +77,7 @@ const Confidentiality = (props) => {
                   'Only documents labeled as "confidential"'
                 }
               />
-              <label style={{ color: "grey", marginLeft: "10px" }}>
+              <label style={{ marginLeft: "10px" }}>
                 {" "}
                 Only documents labeled as "confidential"
               </label>
@@ -108,8 +108,7 @@ const Confidentiality = (props) => {
                   )}
                 />
                     }
-                    label={<span style={{ fontSize: '14px' }}>Public Known at the time of disclosure or subsequently becomes
-                    publicly known through no fault of Recieving Party</span>}
+                    label={<span style={{ fontSize: '14px' }}>Publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party.</span>}
 
             />
 
@@ -130,9 +129,7 @@ const Confidentiality = (props) => {
                   )}
                 />
               }
-              label={<span style={{ fontSize: '14px' }}>Discovered, created by, or rightfully in the possession of the
-              Receiving Party before disclosure by Disclosing Party and prior to
-              signing this Agreement</span>}
+              label={<span style={{ fontSize: '14px' }}>Discovered, created by, or rightfully in the possession of the Receiving Party before disclosure by Disclosing Party and prior to signing this Agreement.</span>}
             />
 
             <FormControlLabel
@@ -153,8 +150,7 @@ const Confidentiality = (props) => {
               />
               }
 
-              label={<span style={{ fontSize: '14px' }}>Learned by the Receiving Party through legitimate means other than
-              from the Disclosing Party or Disclosing Party's representatives</span>}
+              label={<span style={{ fontSize: '14px' }}>Learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives.</span>}
             />
 
             <FormControlLabel
@@ -174,8 +170,7 @@ const Confidentiality = (props) => {
                 )}
               />
               }
-              label={<span style={{ fontSize: '14px' }}>Information independently developed without the use of any of the
-              provided Confidential Information</span>}
+              label={<span style={{ fontSize: '14px' }}>Information independently developed without the use of any of the provided Confidential Information.</span>}
             />
 
             <FormControlLabel
@@ -195,8 +190,7 @@ const Confidentiality = (props) => {
                 )}
               />
               }
-              label={<span style={{ fontSize: '14px' }}>Is disclosed by Receiving Party with Disclosing Party's prior
-              written approval</span>}
+              label={<span style={{ fontSize: '14px' }}>Is disclosed by Receiving Party with Disclosing Party's prior written approval.</span>}
             />
 
             <FormControlLabel

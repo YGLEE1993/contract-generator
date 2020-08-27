@@ -79,10 +79,11 @@ const TimePeriod = (props) => {
                     style={{
                       marginTop:"0",
                       marginLeft: '20px',
-                      width: "35%",
+                      width: "40%",
                     }}
+
                     InputLabelProps={{style: {fontSize: 13}}} // font size of input label
-                    InputProps={{style: {fontSize: 14}}} 
+                    InputProps={{style: {fontSize: 14}, inputProps: { min: 0 }}} 
                     size='small'
                     type="number"
                     bordered={false}
@@ -102,12 +103,12 @@ const TimePeriod = (props) => {
                 ref={register({ required: true })}
               />
               <label style={{ marginLeft: "10px" ,fontSize:'14px' }}>
-                Remain in effect until a specific occurance
+                Remain in effect until a specific occurrence
               </label>
               <Controller
                   as={
                     <TextField
-                      label="Ex. End of employement"
+                      label="Ex. end of employment"
                       style={{ marginTop:"0", width: "70%", marginLeft: '20px' }}
                       bordered={false}
                       name="terminationOccurence"

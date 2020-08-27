@@ -29,6 +29,7 @@
   font-family: "Nunito";
   box-shadow: 0 2px 2px 0;
   margin-left: 180%;
+  align-content: center;
 }
 
 .Back-Button {
@@ -74,7 +75,17 @@
 }
 
 .ant-tooltip-inner {
-  width: 320px;
+  width: 310px;
+}
+
+.ant-popover-inner {
+  background-color: #e07c00 !important;
+}
+
+.ant-popover-arrow{ 
+  background-color: #e07c00 !important;
+  border-right-color: #e07c00 !important;
+  border-bottom-color: #e07c00 !important;
 }
 
 .required{

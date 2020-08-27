@@ -11,22 +11,34 @@ import { Select } from "antd";
 import "antd/dist/antd.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../UI/Title/Title";
+import { Popover } from "antd";
 const { Option } = Select;
 
-  const tip1 = (
-    <span style={{ color: "white", fontSize: '14px'}}>
-      <b>How is the form created?</b> <br/>Your response to each question determines
-      what goes into your customized contract. Make sure to fill out all fields
-      so we can help you put everything together!<br /> <br />You can find out the
-      additional information throughout by hovering over <b>"i"</b> icon.{" "}
-      <Tooltip /> 
-    </span>
-  ); 
+const tip1 = (
+  <span style={{ color: "white", fontSize: "14px" }}>
+    <b>How is the form created?</b> <br />
+    Your response to each question determines what goes into your customized
+    contract. Make sure to fill out all fields so we can help you put everything
+    together!
+    <br /> <br />
+    You can find out the additional information throughout by hovering over{" "}
+    <b>"i"</b> icon. <Tooltip />
+  </span>
+);
 
 const tip2 = (
   <span style={{ color: "white", fontSize: "14px" }}>
     <b>Which jurisdiction am I under?</b> <br />
-    Parties usually prefer that the jurisdiction be based on their location or the location of their headquarters. It can save the time and the money to set in the contract as opposed to letting the court decide the jurisdiction.
+    Parties usually prefer that the jurisdiction be based on their location or
+    the location of their headquarters. It can save the time and the money to
+    set in the contract as opposed to letting the court decide the jurisdiction.
+  </span>
+);
+
+const tip3 = (
+  <span style={{ color: "white", fontSize: "14px" }}>
+    Click <b>Next</b> to save your entires!
+    <Tooltip />
   </span>
 );
 
@@ -63,7 +75,7 @@ export default () => {
                   This Non-Disclosure Agreement does not cover healthcare
                   personnel, employees and professsionals who have access to
                   medical information.
-                   <Tooltip placement="right" visible={true} tips={tip1}/>
+                  <Tooltip placement="right" visible={true} tips={tip1} />
                 </h1>
                 {errors.formType && (
                   <p className="required">This is required.</p>
@@ -121,7 +133,7 @@ export default () => {
                         width: "40%",
                         marginTop: "5px",
                       }}
-                      InputProps={{style: {fontSize: 14}}} 
+                      InputProps={{ style: { fontSize: 14 } }}
                       name="contractDate"
                       id="date"
                       type="date"
@@ -131,7 +143,6 @@ export default () => {
                       inputRef={register}
                       bordered="false"
                     />
-                    
                   }
                 />
               </div>
@@ -216,9 +227,16 @@ export default () => {
                     Back
                   </button>
                   <span className="btn">
-                    <button className="Button" type="submit">
-                      Next
-                    </button>
+                    <Popover
+                      style={{ backgroundColor: "red" }}
+                      placement="topLeft"
+                      defaultVisible={true}
+                      content={tip3}
+                    >
+                      <button className="Button" type="submit">
+                        Next
+                      </button>
+                    </Popover>
                   </span>
                 </div>
               </div>
