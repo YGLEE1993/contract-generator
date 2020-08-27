@@ -7,6 +7,8 @@ import { Select } from "antd";
 import Tooltip from "../../../UI/Tooltip/Tooltip";
 import { TextField } from "@material-ui/core";
 import Navigation from "../../../Navigation/Navigation";
+import { Container, Row, Col } from "react-bootstrap";
+import Title from "../../../UI/Title/Title";
 const { Option } = Select;
 
 const Recieving = (props) => {
@@ -28,13 +30,15 @@ const Recieving = (props) => {
   };
 
   return (
-    <>
-      <Navigation />
+    <Container>
+      <Row>
+      <Col xs={3}><Navigation /></Col>
+      <Col>
       <form onSubmit={handleSubmit(onNextStep)}>
+        <Title />
         <div className="form-container">
-
           {/*********  1. Discloser Name *********/}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "30px" }}>
             <h1 className="form-question">
               Recipient Name
               <Tooltip placement="right" tips={recipientTip} />
@@ -47,6 +51,9 @@ const Recieving = (props) => {
                   bordered={false}
                 />
               }
+              InputLabelProps={{style: {fontSize: 13}}}
+              InputProps={{style: {fontSize: 14}}} 
+              size='small'
               control={control}
               name="recipientName"
               rules={{ required: true }}
@@ -92,6 +99,9 @@ const Recieving = (props) => {
                   label="Street Address"
                   style={{ width: "80%" }}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -105,6 +115,9 @@ const Recieving = (props) => {
                   label="Address Line 2"
                   style={{ width: "80%" }}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -115,8 +128,11 @@ const Recieving = (props) => {
               as={
                 <TextField
                   label="City"
-                  style={{ width: "33%", marginTop: "10px" }}
+                  style={{ width: "33%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -201,8 +217,11 @@ const Recieving = (props) => {
               as={
                 <TextField
                   label="Zipcode"
-                  style={{ width: "20%", marginTop: "10px" }}
+                  style={{ width: "20%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -227,12 +246,14 @@ const Recieving = (props) => {
           </div>
         </div>
       </form>
-    </>
+      </Col>
+      </Row>
+    </Container>
   );
 };
 
 const recipientTip = (
-  <span style={{ color: "white", fontSize: "18px" }}>
+  <span style={{ color: "white", fontSize: "14px" }}>
     <b>Who is the Recipient or the Recieving Party?</b>
     <br /> Receiving Party is a party who receives the confidential information
     and is obligated to keep it secret E.g. employee

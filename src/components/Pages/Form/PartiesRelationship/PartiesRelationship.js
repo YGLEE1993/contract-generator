@@ -6,9 +6,11 @@ import { useStateMachine } from "little-state-machine";
 import { TextField } from "@material-ui/core";
 import Navigation from "../../../Navigation/Navigation";
 import Tooltip from "../../../UI/Tooltip/Tooltip";
+import { Container, Row, Col } from "react-bootstrap";
+import Title from "../../../UI/Title/Title";
 
 const relationshipTip = (
-  <span style={{ color: "white", fontSize: "18px"}}>
+  <span style={{ color: "white", fontSize: "14px"}}>
     <b>How does relationship type affect my contract?</b> <br />
     Specifying working relationship type between parties in the NDA helps to establish the purpose of the Agreement.
   </span>
@@ -33,9 +35,13 @@ const PartiesRelationship = (props) => {
     push("/recieving");
   };
   return (
-    <>
-      <Navigation />
+    <Container>
+      <Row>
+        <Col xs={3}><Navigation /></Col>
+
+      <Col>
       <form onSubmit={handleSubmit(onNextStep)}>
+        <Title />
         <div className="form-container">
           {/*********  Parties Relationship *********/}
           <div style={{ marginBottom: "40px" }}>
@@ -47,8 +53,11 @@ const PartiesRelationship = (props) => {
               as={
                 <TextField
                   label="Ex. Employer"
-                  style={{ width: "40%", marginTop: "10px" }}
+                  style={{ width: "40%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -70,8 +79,11 @@ const PartiesRelationship = (props) => {
               as={
                 <TextField
                   label="Ex. Employee"
-                  style={{ width: "40%", marginTop: "10px" }}
+                  style={{ width: "40%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -85,7 +97,7 @@ const PartiesRelationship = (props) => {
           </div>
 
           {/*********  Steps  *********/}
-          <div style={{ marginTop: "150px" }}>
+          <div style={{ marginTop: "90px" }}>
             <div className="form-end"></div>
             <div style={{ marginTop: "15px" }}>
               <button className="Back-Button" onClick={onBackStep}>
@@ -100,7 +112,9 @@ const PartiesRelationship = (props) => {
           </div>
         </div>
       </form>
-    </>
+      </Col>
+      </Row>
+    </Container>
   );
 };
 

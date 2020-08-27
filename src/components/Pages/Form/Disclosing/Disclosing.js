@@ -7,7 +7,10 @@ import { Select } from "antd";
 import Tooltip from "../../../UI/Tooltip/Tooltip";
 import { TextField } from "@material-ui/core";
 import Navigation from "../../../Navigation/Navigation";
+import { Container, Row, Col } from "react-bootstrap";
+import Title from "../../../UI/Title/Title";
 const { Option } = Select;
+
 
 const Disclosing = (props) => {
   const { push } = useHistory();
@@ -27,13 +30,16 @@ const Disclosing = (props) => {
   };
 
   return (
-    <>
-      <Navigation />
+    <Container>
+      <Row>
+        <Col xs={3}> <Navigation /></Col>
+      <Col>
       <form onSubmit={handleSubmit(onNextStep)}>
+      <Title />
         <div className="form-container">
 
           {/*********  1. Discloser Name *********/}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "30px" }}>
             <h1 className="form-question">
               Discloser Name
               <Tooltip placement="right" tips={discloserTip} />
@@ -43,13 +49,15 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="Ex. Jane Doe"
-                  style={{ width: "80%" }}
+                  style={{ width: "80%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}} // font size of input label
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
               name="discloserName"
-              // inputRef={register({ required: true })}
               rules={{ required: true }}
             />
             {errors.discloserName && (
@@ -58,14 +66,18 @@ const Disclosing = (props) => {
           </div>
 
           {/*********  2. Discloser Business *********/}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "30px" }}>
             <h2 className="form-question">Business Name (if different)</h2>
             <Controller
               as={
                 <TextField
+                
                   label="Ex. Harmonize HQ"
                   style={{ width: "80%" }}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -99,7 +111,7 @@ const Disclosing = (props) => {
 
           {/*********  4. Discloser Address *********/}
 
-          <div style={{ marginBottom: "70px" }}>
+          <div style={{ marginBottom: "40px" }}>
             <h2 className="form-question">Discloser Address</h2>
             {(errors.discloserAddressStreet ||
               errors.discloserAddressCity ||
@@ -113,8 +125,12 @@ const Disclosing = (props) => {
                   label="Street Address"
                   style={{ width: "80%" }}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
+            
               control={control}
               name="discloserAddressStreet"
               rules={{ required: true }}
@@ -127,6 +143,9 @@ const Disclosing = (props) => {
                   style={{ width: "80%" }}
                   inputRef={register}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -137,8 +156,11 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="City"
-                  style={{ width: "33%", marginTop: "10px" }}
+                  style={{ width: "33%" }}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -157,9 +179,10 @@ const Disclosing = (props) => {
                     marginLeft: "2%",
                     marginRight: "2%",
                     width: "23%",
-                    marginBottom: "0px",
-                    marginTop: "10px",
+                    // marginBottom: "0px",
+                    // marginTop: "10px",
                   }}
+                  InputProps={{style: {fontSize: 14}}} 
                   label="State"
                   bordered={false}
                   className="SelectState"
@@ -223,8 +246,11 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="Zipcode"
-                  style={{ width: "20%", marginTop: "10px" }}
+                  style={{ width: "20%"}}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -249,12 +275,14 @@ const Disclosing = (props) => {
           </div>
         </div>
       </form>
-    </>
+      </Col>
+      </Row>
+    </Container>
   );
 };
 
 const discloserTip = (
-  <span style={{ color: "white", fontSize: "18px" }}>
+  <span style={{ color: "white", fontSize: "13px" }}>
     <b>Who is the Discolser/Disclosing Party?</b>
     <br />
     Disclosing party is a person disclosing confidential information to the

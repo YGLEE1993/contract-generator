@@ -6,9 +6,11 @@ import { useStateMachine } from "little-state-machine";
 import Tooltip from "../../../UI/Tooltip/Tooltip";
 import { TextField, Checkbox, FormControlLabel } from "@material-ui/core";
 import Navigation from "../../../Navigation/Navigation";
+import { Container, Row, Col } from "react-bootstrap";
+import Title from "../../../UI/Title/Title";
 
 const confidentialTip = (
-  <span style={{ color: "white", fontSize: "18px" }}>
+  <span style={{ color: "white", fontSize: "14px" }}>
     <b>What does confidentiality mean? </b> <br />
     Confidentiality means that the recipient will not share the information that they have recieved with anyone else. We suggest selecting "everything" to include ample protection.
   </span>
@@ -33,12 +35,15 @@ const Confidentiality = (props) => {
   };
 
   return (
-    <>
-      <Navigation />
+    <Container>
+      <Row>
+        <Col xs={3}><Navigation /></Col>
+      <Col>
       <form onSubmit={handleSubmit(onNextStep)}>
+        <Title />
         <div className="form-container">
           {/*********  1. All? *********/}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "30px" }}>
             <h1 className="form-question">
               What will be confidential?
               <Tooltip placement="right" tips={confidentialTip} />
@@ -46,7 +51,7 @@ const Confidentiality = (props) => {
             {errors.confidentialityAll && (
               <p className="required">This is required.</p>
             )}
-            <div style={{ marginTop: "20px" }}>
+            <div style={{ marginTop: "15px", fontSize: '14px'}}>
               <input
                 type="radio"
                 name="confidentialityAll"
@@ -55,13 +60,13 @@ const Confidentiality = (props) => {
                 defaultChecked={state.formDetails.formType === "Everything"}
               />
               <label
-                style={{ color: "grey", marginLeft: "10px" }}
+                style={{ color: "grey", marginLeft: "10px"}}
                 class="radio"
               >
                 Everything
               </label>
             </div>
-            <div style={{ marginBottom: "40px" }}>
+            <div style={{ marginBottom: "30px" , fontSize: '14px'}}>
               <input
                 type="radio"
                 name="confidentialityAll"
@@ -81,7 +86,7 @@ const Confidentiality = (props) => {
 
           {/*********  2. Check *********/}
           <div style={{ marginBottom: "10px" }}>
-            <h2 className="form-question">
+            <h2 className="form-question" style={{marginBottom: '20px'}}>
               Are there any confidentiality exceptions that should be included
               in the contract?
             </h2>
@@ -98,12 +103,14 @@ const Confidentiality = (props) => {
                       }}
                       onChange={(e) => props.onChange(e.target.checked)}
                       checked={props.value}
+                      size='small'
                     />
                   )}
                 />
-              }
-              label="Public Known at the time of disclosure or subsequently becomes
-                  publicly known through no fault of Recieving Party"
+                    }
+                    label={<span style={{ fontSize: '14px' }}>Public Known at the time of disclosure or subsequently becomes
+                    publicly known through no fault of Recieving Party</span>}
+
             />
 
             <FormControlLabel
@@ -118,13 +125,14 @@ const Confidentiality = (props) => {
                       }}
                       onChange={(e) => props.onChange(e.target.checked)}
                       checked={props.value}
+                      size='small'
                     />
                   )}
                 />
               }
-              label="Discovered, created by, or rightfully in the possession of the
+              label={<span style={{ fontSize: '14px' }}>Discovered, created by, or rightfully in the possession of the
               Receiving Party before disclosure by Disclosing Party and prior to
-              signing this Agreement"
+              signing this Agreement</span>}
             />
 
             <FormControlLabel
@@ -139,12 +147,14 @@ const Confidentiality = (props) => {
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
+                    size='small'
                   />
                 )}
               />
               }
-              label="Learned by the Receiving Party through legitimate means other than
-              from the Disclosing Party or Disclosing Party's representatives"
+
+              label={<span style={{ fontSize: '14px' }}>Learned by the Receiving Party through legitimate means other than
+              from the Disclosing Party or Disclosing Party's representatives</span>}
             />
 
             <FormControlLabel
@@ -159,12 +169,13 @@ const Confidentiality = (props) => {
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
+                    size='small'
                   />
                 )}
               />
               }
-              label="Information independently developed without the use of any of the
-              provided Confidential Information"
+              label={<span style={{ fontSize: '14px' }}>Information independently developed without the use of any of the
+              provided Confidential Information</span>}
             />
 
             <FormControlLabel
@@ -179,12 +190,13 @@ const Confidentiality = (props) => {
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
+                    size='small'
                   />
                 )}
               />
               }
-              label="Is disclosed by Receiving Party with Disclosing Party's prior
-              written approval"
+              label={<span style={{ fontSize: '14px' }}>Is disclosed by Receiving Party with Disclosing Party's prior
+              written approval</span>}
             />
 
             <FormControlLabel
@@ -199,19 +211,23 @@ const Confidentiality = (props) => {
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
+                    size='small'
                   />
                 )}
               />
               }
-              label=" Other exceptions"
+              label={<span style={{ fontSize: '14px' }}>Other exceptions</span>}
             />
             <Controller
               as={
                 <TextField
                   label="E.g. widely used programming practices or algorithms."
-                  style={{ marginLeft: "30px", width: "90%", marginTop: "0" }}
+                  style={{ marginLeft: "30px", width: "90%"}}
                   inputRef={register}
                   bordered={false}
+                  InputLabelProps={{style: {fontSize: 13}}}
+                  InputProps={{style: {fontSize: 14}}} 
+                  size='small'
                 />
               }
               control={control}
@@ -262,7 +278,9 @@ const Confidentiality = (props) => {
           </div>
         </div>
       </form>
-    </>
+      </Col>
+      </Row>
+    </Container>
   );
 };
 
