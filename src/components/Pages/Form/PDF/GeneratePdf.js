@@ -48,7 +48,7 @@ export default function GeneratePdf() {
 
   var confidentiality2d;
   if (state.formDetails.otherInformation !== "") {
-    confidentiality2d = ` where ${state.formDetails.otherInformation}.\n\n`;
+    confidentiality2d = ` ${state.formDetails.discloserBusiness} where ${state.formDetails.otherInformation}.\n\n`;
   }else{
     confidentiality2d="";
   }
@@ -204,7 +204,7 @@ export default function GeneratePdf() {
           "(a) technical and business information concerning Disclosing Party’s trade secrets, products and services, including product know-how, formulas, designs, devices, diagrams, software code, test results, processes, inventions, research projects and product development, technical memoranda and correspondence, cost information, profits, sales information, accounting and unpublished financial information, business plans, markets and marketing methods, customer lists and customer information, purchasing techniques, supplier lists and supplier information and advertising strategies;\n\n",
           "(b) information concerning Disclosing Party’s employees, including salaries, strengths, weaknesses, and skills;\n\n",
           "(c) information submitted by Disclosing Party’s customers, suppliers, employees, consultants or co-venture partners with Disclosing Party for study, evaluation or use; and\n\n",
-          "(d) any other information not generally known to the public which, if misused or disclosed, could reasonably be expected to adversely affect the Disclosing Party’s business.",
+          `(d) any other information not generally known to the public which, if misused or disclosed, could reasonably be expected to adversely affect the Disclosing Party’s business.`,
           `${confidentiality2d}`,
           "Confidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
         ],
