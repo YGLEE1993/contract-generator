@@ -140,7 +140,7 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="Address Line 2"
-                  style={{ width: "80%" }}
+                  style={{ width: "80%" , marginTop: '5px' }}
                   inputRef={register}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
@@ -156,7 +156,7 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="City"
-                  style={{ width: "33%" }}
+                  style={{ width: "33%" , marginTop: '5px'}}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 
@@ -179,8 +179,6 @@ const Disclosing = (props) => {
                     marginLeft: "2%",
                     marginRight: "2%",
                     width: "23%",
-                    // marginBottom: "0px",
-                    // marginTop: "10px",
                   }}
                   InputProps={{style: {fontSize: 14}}} 
                   label="State"
@@ -246,7 +244,7 @@ const Disclosing = (props) => {
               as={
                 <TextField
                   label="Zipcode"
-                  style={{ width: "20%"}}
+                  style={{ width: "20%", marginTop: '5px'}}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 

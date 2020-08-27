@@ -113,7 +113,7 @@ const Recieving = (props) => {
               as={
                 <TextField
                   label="Address Line 2"
-                  style={{ width: "80%" }}
+                  style={{ width: "80%" , marginTop: '5px'}}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 
@@ -128,7 +128,7 @@ const Recieving = (props) => {
               as={
                 <TextField
                   label="City"
-                  style={{ width: "33%"}}
+                  style={{ width: "33%", marginTop: '5px'}}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 
@@ -217,7 +217,7 @@ const Recieving = (props) => {
               as={
                 <TextField
                   label="Zipcode"
-                  style={{ width: "20%"}}
+                  style={{ width: "20%", marginTop: '5px'}}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 
