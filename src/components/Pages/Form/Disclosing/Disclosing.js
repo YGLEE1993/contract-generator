@@ -283,9 +283,7 @@ const discloserTip = (
   <span style={{ color: "white", fontSize: "13px" }}>
     <b>Who is the Discolser/Disclosing Party?</b>
     <br />
-    Disclosing party is a person disclosing confidential information to the
-    Receiving Party. E.g. Employer or client who is disclosing confidential
-    information to an employee or independent contractor.
+    Disclosing party is a person disclosing confidential information to the Receiving Party. E.g. Employer or client who is disclosing confidential information to an employee or independent contractor.
   </span>
 );
 

@@ -12,7 +12,7 @@ import Title from "../../../UI/Title/Title";
 const confidentialTip = (
   <span style={{ color: "white", fontSize: "14px" }}>
     <b>What does confidentiality mean? </b> <br />
-    Confidentiality means that the recipient will not share the information that they have recieved with anyone else. We suggest selecting "everything" to include ample protection.
+    Confidentiality means that the recipient will not share the information that they have received with anyone else. We suggest selecting "everything" to include ample protection.
   </span>
 );
 

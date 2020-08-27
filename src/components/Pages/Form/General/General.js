@@ -17,7 +17,7 @@ const { Option } = Select;
     <span style={{ color: "white", fontSize: '14px'}}>
       <b>How is the form created?</b> <br/>Your response to each question determines
       what goes into your customized contract. Make sure to fill out all fields
-      so we can help you put everything together!<br /> You can find out the
+      so we can help you put everything together!<br /> <br />You can find out the
       additional information throughout by hovering over <b>"i"</b> icon.{" "}
       <Tooltip /> 
     </span>
@@ -26,9 +26,7 @@ const { Option } = Select;
 const tip2 = (
   <span style={{ color: "white", fontSize: "14px" }}>
     <b>Which jurisdiction am I under?</b> <br />
-    Parties usually prefer that the jurisdiction be based on their locatoin or
-    the location of their headquarters. It can save the time and the monney to
-    set in the contract as opposed to letting the court decide the jurisdiction.
+    Parties usually prefer that the jurisdiction be based on their location or the location of their headquarters. It can save the time and the money to set in the contract as opposed to letting the court decide the jurisdiction.
   </span>
 );
 

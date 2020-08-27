@@ -255,8 +255,7 @@ const Recieving = (props) => {
 const recipientTip = (
   <span style={{ color: "white", fontSize: "14px" }}>
     <b>Who is the Recipient or the Recieving Party?</b>
-    <br /> Receiving Party is a party who receives the confidential information
-    and is obligated to keep it secret E.g. employee
+    <br /> Receiving Party is a party who receives confidential information and is obligated to keep it secret E.g. employee
   </span>
 );
 export default Recieving;
