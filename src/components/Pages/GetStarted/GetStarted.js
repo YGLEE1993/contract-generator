@@ -22,7 +22,7 @@ export default function GetStarted() {
     <>
           <form onSubmit={handleSubmit(onNextStep)}>
       <div>
-        <div className="center"  style={{ marginTop: '180px' }}>
+        <div className="center"  style={{ marginTop: '160px' }}>
           <h1 className="question">I am a </h1>
           <span>
             <input name="iAm" ref={register({ required: true })} className="input" placeholder= "Human Resources Manager" type="text"></input>
