@@ -17,7 +17,7 @@ const { Option } = Select;
     <span style={{ color: "white", fontSize: '14px'}}>
       <b>How is the form created?</b> <br/>Your response to each question determines
       what goes into your customized contract. Make sure to fill out all fields
-      so we can help you put everything together! <br /> <br /> You can find out the
+      so we can help you put everything together!<br /> You can find out the
       additional information throughout by hovering over <b>"i"</b> icon.{" "}
       <Tooltip /> 
     </span>
