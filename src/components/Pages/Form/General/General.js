@@ -14,7 +14,7 @@ import Title from "../../../UI/Title/Title";
 const { Option } = Select;
 
 const tip2 = (
-  <span style={{ color: "white", fontSize: "18px" }}>
+  <span style={{ color: "white", fontSize: "14px"}}>
     <b>Which jurisdiction am I under?</b> <br />
     Parties usually prefer that the jurisdiction be based on their locatoin or
     the location of their headquarters. It can save the time and the monney to
@@ -104,13 +104,14 @@ export default () => {
               as={
                 <TextField
                   label="Select Date"
-                  style={{ width: "40%", marginTop: "5px" }}
+                  style={{ width: "40%", marginTop: "5px", fontSize: '10px' }}
                   name="contractDate"
                   id="date"
                   type="date"
                   InputLabelProps={{
                     shrink: true,
                   }}
+ 
                   inputRef={register}
                   bordered="false"
                 />

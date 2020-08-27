@@ -11,8 +11,8 @@
   width: 223px;
   font-weight: 400;
   color: #999999;
-  font-size: 1.3em;
-  padding-bottom: 10px;
+  /* font-size: 1.3em; */
+  padding-bottom: 5px;
 }
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
@@ -56,7 +56,6 @@
   border-bottom: 2px solid #e07c00;
 } */
 
-
 .form-question {
   font-size: 21px;
   font-family: Nunito;
@@ -70,13 +69,12 @@
   font-weight: 400;
   color: #999999;
   font-size: 0.8rem !important;
-  padding-bottom: 10px;
+  /* padding-bottom: 5px; */
   margin-top: 5px !important;
 }
 
 .ant-tooltip-inner {
-  width: 360px;
-  font-size: 12px;
+  width: 320px;
 }
 
 .required{
