@@ -109,6 +109,7 @@ export default function GeneratePdf() {
     title: "NDA",
     // pageSize: 'A5',
     // pageMargins: [ 40, 60, 40, 60 ],
+    pageSize: 'A4',
     pageMargins:72,
     watermark: {
       text: "PROOF PROOF",

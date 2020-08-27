@@ -13,6 +13,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../UI/Title/Title";
 const { Option } = Select;
 
+  const tip1 = (
+    <span style={{ color: "white", fontSize: '14px'}}>
+      <b>How is the form created?</b> <br/>Your response to each question determines
+      what goes into your customized contract. Make sure to fill out all fields
+      so we can help you put everything together! <br /> <br /> You can find out the
+      additional information throughout by hovering over <b>"i"</b> icon.{" "}
+      <Tooltip /> 
+    </span>
+  ); 
+
 const tip2 = (
   <span style={{ color: "white", fontSize: "14px" }}>
     <b>Which jurisdiction am I under?</b> <br />
@@ -55,7 +65,7 @@ export default () => {
                   This Non-Disclosure Agreement does not cover healthcare
                   personnel, employees and professsionals who have access to
                   medical information.
-                  {/* <Tooltip placement="right" tips={tip1} /> */}
+                   <Tooltip placement="right" visible={true} tips={tip1}/>
                 </h1>
                 {errors.formType && (
                   <p className="required">This is required.</p>
