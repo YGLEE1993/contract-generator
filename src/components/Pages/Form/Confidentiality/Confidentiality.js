@@ -16,6 +16,12 @@ const confidentialTip = (
   </span>
 );
 
+const exceptionTip = (
+  <span style={{ color: "white", fontSize: "14px" }}>
+    <b>All of the exceptions listed here are usually included in all NDA’s.</b> <br/> If you wish, you can add Other eceptions here.
+  </span>
+);
+
 const Confidentiality = (props) => {
   const { push } = useHistory();
   const { state, action } = useStateMachine(updateAction);
@@ -89,6 +95,7 @@ const Confidentiality = (props) => {
             <h2 className="form-question" style={{marginBottom: '20px'}}>
               Are there any confidentiality exceptions that should be included
               in the contract?
+              <Tooltip placement="right" visible={true} tips={exceptionTip} />
             </h2>
 
             <FormControlLabel
