@@ -34,11 +34,7 @@ export default function GeneratePdf() {
   // ************** Time Period ************** //
   var timePeriod;
   if (state.formDetails.timePeriod === "Survive its termination") {
-    timePeriod = `The non-disclosure provisions of this Agreement shall survive the termination
-    of this Agreement and Receiving Party's duty to hold Confidential Information in confidence shall
-    remain in effect until the Confidential Information no longer qualifies as a trade secret, in case of
-    trade secrets, or until Disclosing Party sends Receiving Party a written notice releasing Receiving
-    Party from this Agreement, whichever occurs first.\n\n`;
+    timePeriod = `The non-disclosure provisions of this Agreement shall survive the termination of this Agreement and Receiving Party's duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret, in case of trade secrets, or until Disclosing Party sends Receiving Party a written notice releasing Receiving Party from this Agreement, whichever occurs first.\n\n`;
   }
   if (state.formDetails.timePeriod === "years") {
     timePeriod = `The non- disclosure provisions of this Agreement shall remain in effect for ${state.formDetails.terminationYears} years from the date on which the Confidential Information was disclosed or otherwise made available to the Receiving Party. However, the Receiving Party’s obligation to protect trade secrets is perpetual. \n\n`;
