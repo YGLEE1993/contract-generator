@@ -101,6 +101,7 @@ const Confidentiality = (props) => {
             <FormControlLabel
               control={
                 <Controller
+                labelPlacementTop
                   name="confidentiality_1"
                   control={control}
                   render={(props) => (

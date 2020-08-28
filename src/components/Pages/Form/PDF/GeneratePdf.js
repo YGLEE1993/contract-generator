@@ -48,7 +48,7 @@ export default function GeneratePdf() {
 
   var confidentiality2d;
   if (state.formDetails.otherInformation !== "") {
-    confidentiality2d = ` ${state.formDetails.discloserBusiness} where ${state.formDetails.otherInformation}.\n\n`;
+    confidentiality2d = ` ${state.formDetails.otherInformation}.`;
   }else{
     confidentiality2d="";
   }
@@ -206,7 +206,7 @@ export default function GeneratePdf() {
           "(c) information submitted by Disclosing Party’s customers, suppliers, employees, consultants or co-venture partners with Disclosing Party for study, evaluation or use; and\n\n",
           `(d) any other information not generally known to the public which, if misused or disclosed, could reasonably be expected to adversely affect the Disclosing Party’s business.`,
           `${confidentiality2d}`,
-          "Confidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
+          "\n\nConfidential Information also includes any and all, work products, studies and other material which contain, include, refer to or otherwise reflect or are generated from any Confidential Information.\n\n",
         ],
       },
 
@@ -338,7 +338,7 @@ export default function GeneratePdf() {
       },
       {
         text: [
-          "IN WITNESS WHEREOF, the parties have executed this Agreement effective as of the Effective Date.\n\n",
+          "\n\nIN WITNESS WHEREOF, the parties have executed this Agreement effective as of the Effective Date.\n\n",
           { text: "DISCLOSING PARTY \n\n", bold: true },
           "Signature _____________________________________________________\n\n",
           "Typed or Printed Name ________________________ Date:______________\n\n",

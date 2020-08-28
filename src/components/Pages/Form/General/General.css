@@ -94,3 +94,7 @@
   font-size: 13px;
 }
 
+.MuiFormControlLabel-label{
+  padding-bottom: 7px;
+  line-height: normal !important;
+}
