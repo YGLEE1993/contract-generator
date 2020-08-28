@@ -46,7 +46,7 @@ const TimePeriod = (props) => {
             {errors.timePeriod && <p className="required">This is required.</p>}
             
             {/*********    1. Survive its termination   *********/}
-            <div style={{ marginTop: "40px"}}>
+            <div style={{ marginTop: "20px"}}>
               <input
                 type="radio"
                 name="timePeriod"
