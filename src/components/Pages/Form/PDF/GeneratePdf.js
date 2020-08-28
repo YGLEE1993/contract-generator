@@ -358,7 +358,7 @@ export default function GeneratePdf() {
       },
       {
         text: [
-          { text: "RECEIVING PARTY \n\n", bold: true },
+          { text: "\n\nRECEIVING PARTY \n\n", bold: true },
           "Signature _____________________________________________________\n\n",
           "Typed or Printed Name ________________________ Date:______________",
           // "Typed or Printed Name",
