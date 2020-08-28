@@ -175,6 +175,6 @@ const timePeriodTip2 = (
 
 const timePeriodTip1 = (
   <span style={{ color: "white", fontSize: "14px" }}>
-    <b>What does "survive it's termination" mean?</b><br/> To survive the termination of the Agreement means that there is no end date to keep the information secret.
+    <b>What does "survive its termination" mean?</b><br/> To survive the termination of the Agreement means that there is no end date to keep the information secret.
   </span>
 );
