@@ -31,6 +31,7 @@ export default function Navigation() {
               </Link>
             </li>
 
+// <<<<<<< master
             <li
               className={
                 location.pathname === path("/recieving") ? "active" : ""
@@ -40,6 +41,13 @@ export default function Navigation() {
                 Receiving Party
               </Link>
             </li>
+// =======
+//               <li className={location.pathname === "/recieving" ? "active" : ""}>
+//                 <Link className="sidebar-item" to="/recieving">
+//                 Receiving Party
+//                 </Link>
+//               </li>
+// >>>>>>> master
 
             <li
               className={
